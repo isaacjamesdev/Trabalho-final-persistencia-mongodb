@@ -1,0 +1,25 @@
+
+func-departamento  - FEITO
+PROJETO - departamento - FEITO
+pesquisador - projeto - FEITO
+
+---------
+erro estár na herança com a estrategia - RESOLVIDO
+-------------
+
+-----Reta Final------
+Aplicar Padrão DAO (slide 40 à 45) --- FEITO
+
+
+-----refatorações-----
+Anotações: @notNull (message= "");
+ID's é Integer
+
+dependentes. EDITAR
+--------------
+==============
+para entregar:
+fazer os testes.
+Ajeitar Interações
+==============
+--------------
