@@ -17,7 +17,10 @@ public class Departamento {
 	private List<AbstractFuncionario> funcionarios;
 	private List<Projeto> projetos;
 
-
+	public Departamento() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Departamento(int numero, String nome) {
 		funcionarios = new ArrayList<>();
 		this.numero = numero;
@@ -27,6 +30,12 @@ public class Departamento {
 	
 	public int get_id() {
 		return _id;
+	}
+	
+	
+
+	public void set_id(int _id) {
+		this._id = _id;
 	}
 
 	public int getNumero() {

@@ -1,18 +1,15 @@
 package br.ufc.persistencia.teste;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
 
 import br.ufc.persistencia.codec.CodecProvider;
+import br.ufc.persistencia.connection.MongoConnection;
 import br.ufc.persistencia.model.Departamento;
 import br.ufc.persistencia.model.FuncionarioLimpeza;
 import br.ufc.persistencia.model.TipoSexo;
 
 import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.MongoClient;
 
 /**
  * @author Isaac James
@@ -20,10 +17,8 @@ import com.mongodb.MongoClient;
  * @Ocupation Graduando de Eng. de Software
  * @University UFC - Campus Quixada - CE
  */
-@SuppressWarnings("deprecation")
 public class PopularBancoTeste {
-	private static final MongoClient mongoClient = new MongoClient();
-	private static final DB database = mongoClient.getDB("TextePersistence");
+	private static final DB database = MongoConnection.getInstance().getDatabase();
 
 	public static void main(String[] args) {
 		popularDepartamento();

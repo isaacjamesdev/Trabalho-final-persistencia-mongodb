@@ -14,6 +14,8 @@ import br.ufc.persistencia.model.Secretario;
 
 import com.google.gson.Gson;
 import com.mongodb.BasicDBObject;
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
 import com.mongodb.DBRef;
 import com.mongodb.util.JSON;
 
@@ -22,9 +24,15 @@ public class CodecProvider implements IcodecProvider{
 	private static final Gson gson = new Gson();
 	private static CodecProvider codecProvider;
 	
-	private CodecProvider() {}
-
+	public void read(){
+		DBObject query = new BasicDBObject("_id", 2);
+		DBCursor cursor = collection.find(query);
+		
+		System.out.println((String)cursor.one().get("projeto"));
+		mongoClient.close();
+	}
 	
+	private CodecProvider() {}
 	//singleton pattern
  	public static CodecProvider getInstance(){
 		 return codecProvider == null ? new CodecProvider() : codecProvider ;

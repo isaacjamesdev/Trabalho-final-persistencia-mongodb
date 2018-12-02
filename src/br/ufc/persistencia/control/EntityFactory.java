@@ -33,7 +33,7 @@ public class EntityFactory implements ICadastro{
 		try {
 			Departamento dep = new Departamento();
 			System.out.println("Digite o Numero do Departamento");
-			dep.setId(setInt());
+			dep.set_id(setInt());
 			System.out.println("Digite o Nome do Departamento");
 			dep.setNome(setString());
 			return dep;
