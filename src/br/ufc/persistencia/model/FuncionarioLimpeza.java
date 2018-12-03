@@ -16,7 +16,7 @@ public class FuncionarioLimpeza extends AbstractFuncionario {
 	}
 
 	public FuncionarioLimpeza(String nome, TipoSexo sexo, Calendar dataAniversario, String endereco, BigDecimal salario,
-			Departamento departamento, int jornadaTrabalho) {
+			Integer departamento, int jornadaTrabalho) {
 		super(nome, sexo, dataAniversario, endereco, salario, departamento);
 		this.jornadaTrabalho = jornadaTrabalho;
 	}

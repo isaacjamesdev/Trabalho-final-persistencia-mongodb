@@ -14,10 +14,10 @@ public class Projeto {
 	private Integer _id;
 	private String nome;
 	private int periodoDesenvolvimento;
-	private Departamento departamento;
-	private List<Pesquisador> pesquisadores = new ArrayList<>();
+	private Integer departamento;
+	private List<String> pesquisadores = new ArrayList<>();
 
-	public Projeto(String nome, int periodoDesenvolvimento, Departamento departamento) {
+	public Projeto(String nome, int periodoDesenvolvimento, Integer departamento) {
 		this.nome = nome;
 		this.periodoDesenvolvimento = periodoDesenvolvimento;
 		this.departamento = departamento;
@@ -43,16 +43,23 @@ public class Projeto {
 		return _id;
 	}
 
-	public List<Pesquisador> getPesquisadores() {
-		return pesquisadores;
-	}
-
-	public Departamento getDepartamento() {
+	public Integer getDepartamento() {
 		return departamento;
 	}
 
-	public void setDepartamento(Departamento departamento) {
+	public void setDepartamento(Integer departamento) {
 		this.departamento = departamento;
 	}
 
+	public List<String> getPesquisadores() {
+		return pesquisadores;
+	}
+
+	public void setPesquisadores(List<String> pesquisadores) {
+		this.pesquisadores = pesquisadores;
+	}
+
+	public void set_id(Integer _id) {
+		this._id = _id;
+	}
 }

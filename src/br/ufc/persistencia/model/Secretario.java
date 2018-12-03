@@ -17,7 +17,7 @@ public class Secretario extends AbstractFuncionario {
 	private String grauEscolar;
 
 	public Secretario(String nome, TipoSexo sexo, Calendar dataAniversario, String endereco, BigDecimal salario,
-			String grauEscolar, Departamento departamento) {
+			String grauEscolar, Integer departamento) {
 		super(nome, sexo, dataAniversario, endereco, salario, departamento);
 		this.grauEscolar = grauEscolar;
 	}
@@ -29,4 +29,6 @@ public class Secretario extends AbstractFuncionario {
 	public void setGrauEscolar(String grauEscolar) {
 		this.grauEscolar = grauEscolar;
 	}
+	
+	
 }

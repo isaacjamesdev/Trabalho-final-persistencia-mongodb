@@ -11,9 +11,9 @@ import java.util.Calendar;
 public class Dependente extends AbstractPessoa {
 
 	private String parentesco;
-	private AbstractFuncionario funcionario;
+	private String funcionario;
 
-	public Dependente(String nome, TipoSexo sexo, Calendar dataAniversario, AbstractFuncionario funcionario,
+	public Dependente(String nome, TipoSexo sexo, Calendar dataAniversario, String funcionario,
 			String parentesco) {
 		super(nome, sexo, dataAniversario);
 		this.parentesco = parentesco;
@@ -28,11 +28,12 @@ public class Dependente extends AbstractPessoa {
 		this.parentesco = parentesco;
 	}
 
-	public AbstractFuncionario getFuncionario() {
+	public String getFuncionario() {
 		return funcionario;
 	}
 
-	public void setFuncionario(AbstractFuncionario funcionario) {
+	public void setFuncionario(String funcionario) {
 		this.funcionario = funcionario;
 	}
+	
 }

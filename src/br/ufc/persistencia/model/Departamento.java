@@ -14,8 +14,8 @@ public class Departamento {
 	private int numero;
 	private String nome;
 	
-	private List<AbstractFuncionario> funcionarios;
-	private List<Projeto> projetos;
+	private List<String> funcionarios;
+	private List<String> projetos;
 
 	public Departamento() {
 		// TODO Auto-generated constructor stub
@@ -31,8 +31,6 @@ public class Departamento {
 	public int get_id() {
 		return _id;
 	}
-	
-	
 
 	public void set_id(int _id) {
 		this._id = _id;
@@ -54,19 +52,19 @@ public class Departamento {
 		this.nome = nome;
 	}
 
-	public List<AbstractFuncionario> getFuncionarios() {
+	public List<String> getFuncionarios() {
 		return funcionarios;
 	}
 
-	public void setFuncionarios(List<AbstractFuncionario> funcionarios) {
+	public void setFuncionarios(List<String> funcionarios) {
 		this.funcionarios = funcionarios;
 	}
 
-	public List<Projeto> getProjetos() {
+	public List<String> getProjetos() {
 		return projetos;
 	}
 
-	public void setProjetos(List<Projeto> projetos) {
+	public void setProjetos(List<String> projetos) {
 		this.projetos = projetos;
 	}
 

@@ -14,15 +14,15 @@ import java.util.List;
 public abstract class AbstractFuncionario extends AbstractPessoa {
 	private String endereco;
 	private BigDecimal salario;
-	private Departamento departamento;
+	private Integer departamento;
 
-	private List<Dependente> dependentes = new ArrayList<>();
+	private List<Integer> dependentes = new ArrayList<>();
 
 	public AbstractFuncionario() {
 	}
 
 	public AbstractFuncionario(String nome, TipoSexo sexo, Calendar dataAniversario, String endereco,
-			BigDecimal salario, Departamento departamento) {
+			BigDecimal salario, Integer departamento) {
 		super(nome, sexo, dataAniversario);
 		this.endereco = endereco;
 		this.salario = salario;
@@ -51,16 +51,20 @@ public abstract class AbstractFuncionario extends AbstractPessoa {
 				+ ", departamento=" + departamento + ", dependentes=" + dependentes + "]";
 	}
 
-	public Departamento getDepartamento() {
+	public Integer getDepartamento() {
 		return departamento;
 	}
 
-	public void setDepartamento(Departamento departamento) {
+	public void setDepartamento(Integer departamento) {
 		this.departamento = departamento;
 	}
 
-	public List<Dependente> getDependentes() {
+	public List<Integer> getDependentes() {
 		return dependentes;
 	}
 
+	public void setDependentes(List<Integer> dependentes) {
+		this.dependentes = dependentes;
+	}
+	
 }
